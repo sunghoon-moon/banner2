@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {margin: 0; padding: 0;}
+        body {
+            font-family: 'Lato', sans-serif;
+            font-weight: bolder;
+        }
+        .banner {
+            position: relative;
+        }
+        .banner > img.video {
+            position: absolute;
+            width: 700px;
+            height: 400px;
+        }
+        .banner > header > h1 {
+            position: absolute;
+            width: 700px;
+            top: 230px;
+            color: #d66e2a;
+            font-size: 54px;
+            text-align: center;
+            text-shadow: 1px 1px 4px #000;
+            opacity: 0;
+            animation-name: title;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+        .banner > img.logo {
+            position: absolute;
+            width: 350px;
+            left: 170px;
+            top: 260px;
+            animation-name: logo;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes title {
+            0% { opacity: 0;}
+            15% { opacity: 0;}
+            30% { opacity: 1;}
+            70% { opacity: 1;}
+            90% { opacity: 0;}
+            100% {opacity: 0;}
+        }
+        @keyframes logo {
+            0% { left: -765px;}
+            9% { left: 175px;}
+            10% { left: 170px;}
+            100% {}
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="banner">
+        <img class="video" src="./trainspotting.gif" alt="">
+        <header>
+            <h1>Choose Life.</h1>
+        </header>
+        <img src="./trainspotting_1996.png" alt="" class="logo">
+    </a>
+</body>
+</html>
